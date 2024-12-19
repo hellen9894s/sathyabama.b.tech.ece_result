@@ -59,6 +59,11 @@
             display: block;
             margin: 0 auto; /* Centering the image */
         }
+
+        /* Ensure images visually merge at ends */
+        .content img + img {
+            margin-top: -4px; /* Removes the gap between images caused by inline spacing */
+        }
     </style>
 </head>
 <body>
@@ -73,8 +78,9 @@
     <!-- Table Image with Space Below Header -->
     <div class="content">
         <img src="re.jpg" alt="Results Table">
+        <img src="re2.jpg" alt="Additional Image">
         <h5>Disclaimer: The institution is not responsible for any inadvertent error that may have crept in the results being published in the internet.
-
+    
             PLEASE NOTE:
             
             Minimum requirement for pass in each subject: Should have secured a minimum of 30% in the End Semester Examinations and also a minimum of 50% in total maximum marks.
@@ -85,5 +91,6 @@
             
             Name, Register Number and your Query</h5>
     </div>
+    
 </body>
 </html>
